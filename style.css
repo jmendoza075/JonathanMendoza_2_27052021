@@ -2,10 +2,92 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
 }
-.section_activites {
-    background: lightblue;
+
+
+.ville_hotel {
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 
 }
+
+
+
+/*  Section hebergements */ 
+.section_hebergements {
+    background: lightpink;
+    padding: 20px;
+}
+
+.hebergements{
+    display: grid;
+    grid-template: repeat(2, 3em) / repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+#heb1 {
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+#heb2 {
+    border: 1px solid red;
+    border-radius: 10px;
+}
+#heb3 {
+    border: 1px solid red;
+    border-radius: 10px;
+}
+#heb4 {
+    border: 1px solid red;
+    border-radius: 10px;
+}
+#heb5 {
+    border: 1px solid red;
+    border-radius: 10px;
+}
+#heb6 {
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+/*  Section Les plus populaires */  
+
+.section_populaires {
+    background: lightseagreen;
+    padding: 20px;
+}
+
+.populaires {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, 3em); 
+
+}
+
+#pop1 {
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+#pop2 {
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+#pop3 {
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+
+
+/*  Section activites */ 
+
+.section_activites {
+    background: lightblue;
+    padding: 20px;
+}
+
 .activites {
     display: grid;
     grid-template: repeat(2, 3em) / repeat(4, 1fr);
@@ -13,58 +95,49 @@ body {
 }
 
 #act1 {
-    border-width: 1px;
+    border: 1px solid red;
     border-radius: 10px;
-    border-style: solid; 
-    border-color: red;
     grid-row: 1/3;
 }
 
 
 #act2 {
-    border-width: 1px;
+    border: 1px solid green;
     border-radius: 10px;
-    border-style: solid; 
-    border-color: green;
 }
 
 #act3 {
-    border-width: 1px;
+    border: 1px solid red;
     border-radius: 10px;
-    border-style: solid; 
-    border-color: red;
-}
-
-
-#act4 {
-    border-width: 1px;
-    border-radius: 10px;
-    border-style: solid; 
-    border-color: green;
     grid-column: 3/4;
     grid-row: 1/3;
 }
 
 
-#act5 {
-    border-width: 1px;
+#act4 {
+    border: 1px solid green;
     border-radius: 10px;
-    border-style: solid; 
-    border-color: green;
+}
+
+
+#act5 {
+    border: 1px solid red;
+    border-radius: 10px;
 }
 
 #act6 {
-    border-width: 1px;
+    border: 1px solid red;
     border-radius: 10px;
-    border-style: solid; 
-    border-color: red;
 }
 
 
-.footer{
+footer{
     background: #F2F2F2;
+
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows: 1fr ;
     grid-auto-rows: 1fr;
 }
+
+
