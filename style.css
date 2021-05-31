@@ -3,15 +3,19 @@ body {
     font-size: 1em;
 }
 
+header {
+    background: powderblue;
+    display: grid;
+    grid-template-columns:5fr 2fr 1fr;
+}
 
-
-.header_block {
+/*.header_block {
     background: powderblue;
     display: grid;
     grid-template-columns:5fr 2fr 1fr;
 
 }
-
+*/
 
 
 nav {
