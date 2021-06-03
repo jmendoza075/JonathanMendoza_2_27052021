@@ -21,8 +21,15 @@ body {
 	justify-content: space-between;
 	align-items: center;
 }
+.boldText {
+	font-weight: bold;
+}
 
-/* Nav Configurations */
+.borderGrey {
+	border: 1px solid #f2f2f2;
+}
+
+/* HEADER and Nav Configurations */
 .navContWidth {
 	width: 30%;
 }
@@ -55,11 +62,45 @@ a:visited {
 	color: black;
 }
 
-/* SECTION Search */
+/* Section  RECHERCHER */
+.srchContWidth {
+	width: 400px;
+	height: 50px;
+}
 
-/* SECTION Filter */
+.iconMap {
+	height: 50px;
+	width: 50px;
+	background-color: #f2f2f2;
+	border-radius: 10px 0 0 10px;
+}
+.inputVille {
+	height: 50px;
+	width: 200px;
+	border: none;
+	padding-left: 30px;
+	font-weight: bold;
+}
 
-/* SECTION Hebergements */
+.srchButtonBleu {
+	height: 50px;
+	width: 150px;
+	background-color: #0065fc;
+	color: #f2f2f2;
+	border-radius: 0 10px 10px 0;
+	font-weight: bolder;
+	cursor: pointer;
+	border: none;
+}
+
+.srchButtonBleu:hover {
+	background-color: #3a88fc;
+	color: #f2f2f2;
+}
+
+/* Section FILTRES */
+
+/* Section HEBERGEMENTS */
 
 .ville_hotel {
 	border: 3px solid black;
@@ -105,7 +146,7 @@ a:visited {
 	border-radius: 10px;
 }
 
-/*  Section Les plus populaires */
+/*  Section LES PLUS POPULAIRES */
 
 .section_populaires {
 	background: lightseagreen;
@@ -132,7 +173,7 @@ a:visited {
 	border-radius: 10px;
 }
 
-/*  Section activites */
+/*  Section ACTIVITES */
 
 .section_activites {
 	background: lightblue;
@@ -177,7 +218,7 @@ a:visited {
 	border: 1px solid red;
 	border-radius: 10px;
 }
-
+/*  FOOTER */
 footer {
 	background: #f2f2f2;
 	display: flex;
