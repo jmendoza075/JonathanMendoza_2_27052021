@@ -10,26 +10,24 @@ body {
 	align-items: center; /* <- centers the item in the CROSS axis */
 }
 
-.flexContentSpaceAround {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
 .flexContentSpaceBetween {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.boldText {
-	font-weight: bold;
+
+.flexRow {
+	display: flex;
+	flex-direction: row;
 }
 
 .borderGrey {
 	border: 1px solid #f2f2f2;
 }
 
+/* 								 */
 /* HEADER and Nav Configurations */
+/* 								 */
 .navContWidth {
 	width: 30%;
 }
@@ -62,7 +60,9 @@ a:visited {
 	color: black;
 }
 
+/* 					 	*/
 /* Section  RECHERCHER */
+/* 					 	*/
 .srchContWidth {
 	width: 400px;
 	height: 50px;
@@ -98,17 +98,53 @@ a:visited {
 	color: #f2f2f2;
 }
 
-/* Section FILTRES */
+/* 					*/
+/* Section FILTRES 	*/
+/* 				 	*/
+.filtreTitle {
+	margin-right: 30px;
+}
+.marginTopBottom {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
 
+.iconBackBleulite {
+	height: 50px;
+	width: 50px;
+	color: #0065fc;
+	background-color: #deebff;
+	border-radius: 25px 25px 25px 25px;
+}
+.filtreItemCont {
+	font-weight: bold;
+	margin-right: 20px;
+	height: 50px;
+	border: 2px solid #f2f2f2;
+	border-radius: 30px;
+}
+.filtreItemCont:hover {
+	background-color: #3a88fc;
+	color: #f2f2f2;
+	cursor: pointer;
+}
+.filtreText {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-weight: bold;
+}
+/* 					 	*/
 /* Section HEBERGEMENTS */
-
+/* 					 	*/
 .ville_hotel {
 	border: 3px solid black;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 }
 
-/*  Section hebergements */
+/* 					 		*/
+/*  Section hebergements 	*/
+/* 					 		*/
 .section_hebergements {
 	background: lightpink;
 	padding: 20px;
@@ -146,8 +182,9 @@ a:visited {
 	border-radius: 10px;
 }
 
+/* 					 			*/
 /*  Section LES PLUS POPULAIRES */
-
+/* 					 			*/
 .section_populaires {
 	background: lightseagreen;
 	padding: 20px;
@@ -173,8 +210,9 @@ a:visited {
 	border-radius: 10px;
 }
 
-/*  Section ACTIVITES */
-
+/* 						*/
+/*  Section ACTIVITES 	*/
+/* 						*/
 .section_activites {
 	background: lightblue;
 	padding: 20px;
@@ -218,7 +256,10 @@ a:visited {
 	border: 1px solid red;
 	border-radius: 10px;
 }
-/*  FOOTER */
+
+/* 			*/
+/*  FOOTER 	*/
+/* 			*/
 footer {
 	background: #f2f2f2;
 	display: flex;
