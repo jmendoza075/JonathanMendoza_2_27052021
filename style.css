@@ -28,6 +28,9 @@ body {
 /* 								 */
 /* HEADER and Nav Configurations */
 /* 								 */
+header {
+	padding: 20px;
+}
 .navContWidth {
 	width: 30%;
 }
@@ -63,6 +66,9 @@ a:visited {
 /* 					 	*/
 /* Section  RECHERCHER */
 /* 					 	*/
+.search {
+	padding: 20px;
+}
 .srchContWidth {
 	width: 400px;
 	height: 50px;
@@ -101,12 +107,15 @@ a:visited {
 /* 					*/
 /* Section FILTRES 	*/
 /* 				 	*/
+.filtre {
+	padding: 20px;
+}
 .filtreTitle {
 	margin-right: 30px;
 }
 .marginTopBottom {
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .iconBackBleulite {
@@ -137,6 +146,9 @@ a:visited {
 /* 						*/
 /* Section Info_text 	*/
 /* 				 		*/
+.info {
+	padding: 20px;
+}
 .infoIcon {
 	height: 20px;
 	width: 20px;
@@ -194,9 +206,9 @@ a:visited {
 	margin: 10px;
 }
 
-/* 					 			*/
-/*  Section LES PLUS POPULAIRES */
-/* 					 			*/
+/* 						 			*/
+/*  Subsection LES PLUS POPULAIRES	*/
+/* 					 				*/
 .populaires {
 	flex: 1;
 	background: #f2f2f2;
@@ -219,9 +231,9 @@ a:visited {
 	align-items: center;
 }
 .popHotel_img img {
-	max-width: 100%;
+	width: 100%;
 	border-radius: 20px 0 0 20px;
-	height: 160px;
+	height: 150px;
 }
 
 .popHotel_img {
@@ -234,4 +246,51 @@ a:visited {
 }
 .iconChart {
 	margin-right: 30px;
+}
+
+/* 					 	*/
+/* Section ACTIVITES	*/
+/* 				    	*/
+
+.section_activites {
+	padding: 20px;
+}
+
+.cont_activites {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.cont_actv_full_card {
+	height: 400px;
+	flex-basis: 23%;
+}
+
+.cont_actv_half_card {
+	height: 400px;
+	flex-basis: 23%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.actv_card {
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 5px 5px 5px #f2f2f2;
+}
+.actv_img_tall img {
+	max-width: 100%;
+	border-radius: 20px 20px 0 0;
+	height: 350px;
+}
+.actv_img_short img {
+	width: 100%;
+	border-radius: 20px 20px 0 0;
+	max-height: 130px;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.actv_text {
+	margin: 10px;
 }
