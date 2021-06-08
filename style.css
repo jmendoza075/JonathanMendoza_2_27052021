@@ -21,10 +21,6 @@ body {
 	flex-direction: row;
 }
 
-.borderGrey {
-	border: 1px solid #f2f2f2;
-}
-
 /* 								 */
 /* HEADER and Nav Configurations */
 /* 								 */
@@ -64,10 +60,11 @@ a:visited {
 /* Section  RECHERCHER */
 /* 					 	*/
 .search {
-	padding: 0 20px;
+	padding: 20px;
 }
 .srchContWidth {
-	width: 400px;
+	padding-top: 20px;
+	width: 430px;
 	height: 50px;
 }
 
@@ -80,14 +77,15 @@ a:visited {
 .inputVille {
 	height: 50px;
 	width: 200px;
-	border: none;
+	border: 1px solid #f2f2f2;
 	padding-left: 30px;
 	font-weight: bold;
+	margin-right: -5px;
 }
 
-.srchButtonBleu {
+#rch_button {
 	height: 50px;
-	width: 150px;
+	width: 120px;
 	background-color: #0065fc;
 	color: #f2f2f2;
 	border-radius: 0 10px 10px 0;
@@ -95,8 +93,22 @@ a:visited {
 	cursor: pointer;
 	border: none;
 }
+#rch_button:hover {
+	background-color: #3a88fc;
+	color: #f2f2f2;
+}
 
-.srchButtonBleu:hover {
+#rch_icon {
+	height: 50px;
+	width: 50px;
+	background-color: #0065fc;
+	color: #f2f2f2;
+	border-radius: 10px 10px 10px 10px;
+	cursor: pointer;
+	border: none;
+	display: none;
+}
+#rch_icon:hover {
 	background-color: #3a88fc;
 	color: #f2f2f2;
 }
@@ -105,13 +117,13 @@ a:visited {
 /* Section FILTRES 	*/
 /* 				 	*/
 .filtre {
-	padding: 20px;
+	padding-left: 20px;
 	display: flex;
 	align-items: center;
 }
 
 .filtreTitle {
-	margin-right: 30px;
+	padding-right: 30px;
 }
 
 .iconBackBleulite {
@@ -305,9 +317,9 @@ footer {
 	margin-right: 150px;
 }
 
-/*                          */
-/* RESPONSIVES, media query */
-/*                          */
+/*                     					   		*/
+/* 				RESPONSIVES, media query 		*/
+/*                    				     	 	*/
 
 /* On ipad */
 @media all and (max-width: 768px) {
@@ -344,6 +356,15 @@ footer {
 		height: 80px;
 	}
 
+	/* Responsive Recherche icon */
+
+	#rch_button {
+		display: none;
+	}
+	#rch_icon {
+		display: initial;
+	}
+	/* Responsive Filtres */
 	.filtreTitle {
 		flex-basis: 100%;
 	}
@@ -352,6 +373,8 @@ footer {
 		height: 200px;
 		align-content: space-between;
 	}
+
+	/* Responsive Hebergements */
 	.section_hebergements {
 		flex-direction: column;
 		background-color: #f2f2f2;
@@ -382,3 +405,4 @@ footer {
 		justify-content: space-between;
 	}
 }
+/* Responsive Activites */
