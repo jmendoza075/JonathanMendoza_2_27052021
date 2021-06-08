@@ -28,12 +28,15 @@ body {
 /* 								 */
 /* HEADER and Nav Configurations */
 /* 								 */
+
 header {
-	padding: 20px;
+	padding: 10 20px 0;
 }
-.navContWidth {
-	width: 30%;
+#logo {
+	flex-basis: 60%;
+	padding-left: 20px;
 }
+
 .navHeight {
 	height: 100px;
 }
@@ -41,33 +44,27 @@ header {
 	text-decoration: none;
 	color: #0065fc;
 }
-
-.sInscrire {
+#hebergement_link {
+	border-top: 3px solid #0065fc;
+}
+#activites_link {
+	color: black;
+}
+#inscrire_link {
 	font-weight: bolder;
-}
-
-/* Hover and navlink behavior */
-a:active {
-	background-color: #f2f2f2;
-}
-
-a:hover {
 	color: #0065fc;
-	font-weight: normal;
-	height: 100px;
-	border-top: 2px solid #0065fc;
-	display: flex;
-	align-items: center;
+}
+a:hover {
+	font-weight: bolder;
 }
 a:visited {
 	color: black;
 }
-
 /* 					 	*/
 /* Section  RECHERCHER */
 /* 					 	*/
 .search {
-	padding: 20px;
+	padding: 0 20px;
 }
 .srchContWidth {
 	width: 400px;
@@ -109,13 +106,12 @@ a:visited {
 /* 				 	*/
 .filtre {
 	padding: 20px;
+	display: flex;
+	align-items: center;
 }
+
 .filtreTitle {
 	margin-right: 30px;
-}
-.marginTopBottom {
-	margin-top: 10px;
-	margin-bottom: 10px;
 }
 
 .iconBackBleulite {
@@ -173,7 +169,7 @@ a:visited {
 .titreMarginLeft {
 	margin-left: 40px;
 }
-.hebergements {
+#hebergements {
 	flex: 2;
 	background-color: #f2f2f2;
 	border-radius: 20px;
@@ -209,7 +205,7 @@ a:visited {
 /* 						 			*/
 /*  Subsection LES PLUS POPULAIRES	*/
 /* 					 				*/
-.populaires {
+#populaires {
 	flex: 1;
 	background: #f2f2f2;
 	border-radius: 20px;
@@ -252,7 +248,7 @@ a:visited {
 /* Section ACTIVITES	*/
 /* 				    	*/
 
-.section_activites {
+#activites {
 	padding: 20px;
 }
 
@@ -307,4 +303,82 @@ footer {
 }
 .footer_spacing {
 	margin-right: 150px;
+}
+
+/*                          */
+/* RESPONSIVES, media query */
+/*                          */
+
+/* On ipad */
+@media all and (max-width: 768px) {
+	header {
+		background-color: white;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#logo {
+		flex-basis: 60%;
+		justify-content: left;
+	}
+	#inscrire_link {
+		order: 1;
+		flex-basis: 25%;
+		justify-content: center;
+		font-weight: bolder;
+	}
+	#hebergement_link {
+		border-top: 0;
+		border-bottom: 3px solid #0065fc;
+		order: 2;
+		flex-basis: 48%;
+		justify-content: center;
+	}
+	#activites_link {
+		order: 3;
+		flex-basis: 48%;
+		justify-content: center;
+	}
+
+	.navHeight {
+		height: 80px;
+	}
+
+	.filtreTitle {
+		flex-basis: 100%;
+	}
+	.filtre_container {
+		flex-wrap: wrap;
+		height: 200px;
+		align-content: space-between;
+	}
+	.section_hebergements {
+		flex-direction: column;
+		background-color: #f2f2f2;
+		padding: 0;
+	}
+	#populaires {
+		order: 1;
+		border-radius: 0;
+		margin-top: 10px;
+	}
+	#hebergements {
+		order: 2;
+		background-color: white;
+		border-radius: 0;
+		margin-right: 0;
+	}
+	.contHotels {
+		flex-direction: column;
+	}
+	.hotel_card {
+		box-shadow: 5px 5px 5px #f2f2f2;
+	}
+	.titreMarginLeft {
+		margin-left: 20px;
+	}
+	.cont_activites {
+		flex-direction: column;
+		justify-content: space-between;
+	}
 }
