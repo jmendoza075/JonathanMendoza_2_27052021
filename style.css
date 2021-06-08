@@ -36,6 +36,7 @@ header {
 .navHeight {
 	height: 100px;
 }
+
 .navLinkProp {
 	text-decoration: none;
 	color: #0065fc;
@@ -47,15 +48,14 @@ header {
 	color: black;
 }
 #inscrire_link {
+	font-size: 1.1em;
 	font-weight: bolder;
-	color: #0065fc;
 }
 a:hover {
 	font-weight: bolder;
+	font-size: 1.1em;
 }
-a:visited {
-	color: black;
-}
+
 /* 					 	*/
 /* Section  RECHERCHER */
 /* 					 	*/
@@ -80,6 +80,7 @@ a:visited {
 	border: 1px solid #f2f2f2;
 	padding-left: 30px;
 	font-weight: bold;
+	font-size: 18px;
 	margin-right: -5px;
 }
 
@@ -149,6 +150,7 @@ a:visited {
 	margin-left: 10px;
 	margin-right: 10px;
 	font-weight: bolder;
+	font-size: 18px;
 }
 
 /* 						*/
@@ -204,6 +206,7 @@ a:visited {
 	margin: 10px;
 	padding: 6px;
 }
+
 .hotel_img img {
 	width: 100%;
 	border-radius: 20px 20px 0 0;
@@ -238,6 +241,7 @@ a:visited {
 	flex-direction: row;
 	align-items: center;
 }
+
 .popHotel_img img {
 	width: 100%;
 	border-radius: 20px 0 0 20px;
