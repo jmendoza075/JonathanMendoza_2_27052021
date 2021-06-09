@@ -219,9 +219,7 @@ a:hover {
 .fa-star {
 	color: #0065fc;
 }
-.fa-star-o {
-	color: #f2f2f2;
-}
+
 /* 						 			*/
 /*  Subsection LES PLUS POPULAIRES	*/
 /* 					 				*/
@@ -330,8 +328,37 @@ footer {
 /* 				RESPONSIVES, media query 		*/
 /*                    				     	 	*/
 
-/* On ipad */
+/*						 	 */
+/* Medium Screen Responsives */
+/*		e.g. ipads		     */
+
 @media all and (max-width: 768px) {
+	body {
+		background-color: lightblue;
+	}
+	/* Medium Screen : Header */
+	#logo {
+		flex-basis: 30%;
+		justify-content: left;
+	}
+	/* Medium Screen :  Filtres */
+	.filtreTitle {
+		flex-basis: 100%;
+	}
+	.filtre_container {
+		flex-wrap: wrap;
+		height: 200px;
+		align-content: space-between;
+	}
+}
+/*							*/
+/* Small_Screen_Responsives */
+/*							*/
+@media all and (max-width: 576px) {
+	body {
+		background-color: lightgreen;
+	}
+	/* Small Screen : Header */
 	header {
 		background-color: white;
 		display: flex;
@@ -365,25 +392,17 @@ footer {
 		height: 80px;
 	}
 
-	/* Responsive Recherche icon */
+	/* Small Screen : Recherche icon */
 
-	#rch_button {
-		display: none;
-	}
 	#rch_icon {
 		display: initial;
 	}
-	/* Responsive Filtres */
-	.filtreTitle {
-		flex-basis: 100%;
+	#rch_button {
+		display: none;
 	}
-	.filtre_container {
-		flex-wrap: wrap;
-		height: 200px;
-		align-content: space-between;
-	}
+	/* Small Screen : Filtres */
 
-	/* Responsive Hebergements */
+	/* Small Screen :Hebergements */
 	.section_hebergements {
 		flex-direction: column;
 		background-color: #f2f2f2;
@@ -409,9 +428,14 @@ footer {
 	.titreMarginLeft {
 		margin-left: 20px;
 	}
+
+	/* Small Screen : Activites */
 	.cont_activites {
 		flex-direction: column;
-		justify-content: space-between;
+	}
+
+	/* Small Screen : Footer */
+	footer {
+		flex-direction: column;
 	}
 }
-/* Responsive Activites */
