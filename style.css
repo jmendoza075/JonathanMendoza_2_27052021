@@ -216,7 +216,12 @@ a:hover {
 .hotel_info {
 	margin: 10px;
 }
-
+.fa-star {
+	color: #0065fc;
+}
+.fa-star-o {
+	color: #f2f2f2;
+}
 /* 						 			*/
 /*  Subsection LES PLUS POPULAIRES	*/
 /* 					 				*/
