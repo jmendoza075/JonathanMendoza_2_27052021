@@ -182,7 +182,7 @@ a:hover {
 	padding: 20px;
 }
 .titreMarginLeft {
-	margin-left: 40px;
+	margin-left: 30px;
 }
 #hebergements {
 	flex: 2;
@@ -212,6 +212,7 @@ a:hover {
 	width: 100%;
 	border-radius: 20px 20px 0 0;
 	height: 140px;
+	object-fit: cover;
 }
 
 .hotel_info {
@@ -230,45 +231,42 @@ a:hover {
 	border-radius: 20px;
 }
 .contPopulaire {
-	display: flex;
 	flex-direction: column;
 	margin-right: 20px;
 	margin-left: 20px;
 }
+#iconChart {
+	margin-right: 30px;
+}
+
 /*Popular Hotel Card Layout	*/
-.popHotel_card {
+.pop_hotel_box {
 	background-color: white;
 	border-radius: 20px;
 	margin: 10px;
-	padding: 6px;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
-}
-
-.popHotel_img img {
-	width: 100%;
-	border-radius: 20px 0 0 20px;
 	height: 150px;
+	padding: 10px;
 }
-
-.popHotel_img {
+.pop_hotel_img {
 	width: 40%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 20px 0 0 20px;
+	margin-right: 10px;
 }
 
-.popHotel_info {
-	margin: 3%;
-	width: 55%;
-}
-.iconChart {
-	margin-right: 30px;
+.pop_hotel_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 /* 					 	*/
 /* Section ACTIVITES	*/
 /* 					 	*/
 #section_activites {
-	border: 1px solid green;
 	margin-left: 20px;
 }
 .activites {
@@ -276,11 +274,9 @@ a:hover {
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(2, 250px);
 	grid-gap: 20px;
-	background: mediumseagreen;
 }
 
 .act_img_box {
-	border: 1px solid blueviolet;
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px #f2f2f2;
 }
@@ -322,7 +318,7 @@ a:hover {
 	grid-row: 2/3;
 }
 
-/* 					 */
+/* 					*/
 /* Section FOOTER	*/
 /* 				    */
 
@@ -361,6 +357,32 @@ footer {
 		flex-wrap: wrap;
 		height: 200px;
 		align-content: space-between;
+	}
+	/* Medium Screen : Hebergements */
+	.section_hebergements {
+		flex-direction: column;
+		background-color: #f2f2f2;
+		padding: 0;
+	}
+	#populaires {
+		order: 1;
+		border-radius: 0;
+		margin-top: 10px;
+	}
+	#hebergements {
+		order: 2;
+		background-color: white;
+		border-radius: 0;
+		margin-right: 0;
+	}
+	.contHotels {
+		flex-direction: column;
+	}
+	.hotel_card {
+		box-shadow: 5px 5px 5px #f2f2f2;
+	}
+	.titreMarginLeft {
+		margin-left: 20px;
 	}
 
 	/* Medium Screen : Activites */
@@ -429,31 +451,6 @@ footer {
 	}
 
 	/* Small Screen :Hebergements */
-	.section_hebergements {
-		flex-direction: column;
-		background-color: #f2f2f2;
-		padding: 0;
-	}
-	#populaires {
-		order: 1;
-		border-radius: 0;
-		margin-top: 10px;
-	}
-	#hebergements {
-		order: 2;
-		background-color: white;
-		border-radius: 0;
-		margin-right: 0;
-	}
-	.contHotels {
-		flex-direction: column;
-	}
-	.hotel_card {
-		box-shadow: 5px 5px 5px #f2f2f2;
-	}
-	.titreMarginLeft {
-		margin-left: 20px;
-	}
 
 	/* Small Screen : Footer */
 	footer {
