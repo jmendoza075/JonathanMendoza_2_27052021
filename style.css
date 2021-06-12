@@ -385,7 +385,7 @@ footer {
 
 /* Small_Screen_Responsives  e.g. iphone */
 
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
 	body {
 		background-color: white;
 		font-size: small;
