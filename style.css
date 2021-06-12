@@ -73,8 +73,8 @@ a:hover {
 }
 
 .inputVille {
-	-moz-appearance: none;
-	-webkit-appearance: none;
+	-moz-appearance: none; /* <- special config for Safari iOS, otherwise 	*/
+	-webkit-appearance: none; /*  input has border radius as default 		*/
 	height: 50px;
 	width: 200px;
 	border: 1px solid #f2f2f2;
@@ -90,6 +90,7 @@ a:hover {
 	width: 120px;
 	background-color: #0065fc;
 	color: #f2f2f2;
+	font-size: 1em;
 	border-radius: 0 10px 10px 0;
 	font-weight: bolder;
 	cursor: pointer;
@@ -119,7 +120,7 @@ a:hover {
 #filtre {
 	padding-left: 20px;
 	display: flex;
-	align-items: center;
+	justify-content: space-between;
 }
 
 .filtreTitle {
@@ -139,6 +140,7 @@ a:hover {
 	height: 50px;
 	border: 2px solid #f2f2f2;
 	border-radius: 30px;
+	flex-shrink: 2;
 }
 .filtreItemCont:hover {
 	background-color: #3a88fc;
@@ -154,7 +156,9 @@ a:hover {
 
 /* Section Info_text 	*/
 #info {
-	padding: 20px;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
 }
 .infoIcon {
 	height: 20px;
@@ -162,12 +166,7 @@ a:hover {
 	color: #0065fc;
 	border: 1px solid #f2f2f2;
 	border-radius: 25px 25px 25px 25px;
-}
-
-#infoText {
-	display: flex;
-	align-items: flex-end;
-	margin-left: 10px;
+	margin-right: 10px;
 }
 
 /* Section HEBERGEMENTS */
@@ -341,7 +340,6 @@ footer {
 	}
 	.filtre_container {
 		flex-wrap: wrap;
-		height: 200px;
 		align-content: space-between;
 	}
 	/* Medium Screen : Hebergements */
@@ -390,6 +388,7 @@ footer {
 @media screen and (max-width: 576px) {
 	body {
 		background-color: white;
+		font-size: small;
 	}
 
 	/* Small Screen : Header */
@@ -430,6 +429,10 @@ footer {
 	}
 	#rch_button {
 		display: none;
+	}
+	/* Small Screen :Filtres */
+	.filtre {
+		height: 275px;
 	}
 
 	/* Small Screen :Hebergements */
