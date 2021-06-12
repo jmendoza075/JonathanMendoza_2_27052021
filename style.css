@@ -324,7 +324,7 @@ footer {
 /*            				     	 	*/
 /* Medium Screen Responsives e.g. ipads */
 
-@media all and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	/* Medium Screen : Header */
 	#logo {
 		flex-basis: 30%;
@@ -383,7 +383,7 @@ footer {
 
 /* Small_Screen_Responsives  e.g. iphone */
 
-@media all and (max-width: 576px) {
+@media screen and (max-width: 576px) {
 	body {
 		background-color: white;
 	}
