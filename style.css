@@ -24,11 +24,10 @@ body {
 
 /* HEADER and Nav Configurations */
 header {
-	padding: 10 20px 0;
+	padding: 20px;
 }
 #logo {
 	flex-basis: 60%;
-	padding-left: 20px;
 }
 
 .navHeight {
@@ -48,7 +47,6 @@ header {
 #inscrire_link {
 	font-size: 1.1em;
 	font-weight: bolder;
-	margin-right: 20px;
 }
 a:hover {
 	font-weight: bolder;
@@ -73,8 +71,8 @@ a:hover {
 }
 
 .inputVille {
-	-moz-appearance: none; /* <- special config for Safari iOS, otherwise 	*/
-	-webkit-appearance: none; /*  input has border radius as default 		*/
+	/*-moz-appearance: none;  <- special config for Safari iOS, otherwise 	*/
+	/*-webkit-appearance: none;   input has border radius as default 		*/
 	height: 50px;
 	width: 200px;
 	border: 1px solid #f2f2f2;
@@ -385,7 +383,7 @@ footer {
 
 /* Small_Screen_Responsives  e.g. iphone */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
 	body {
 		background-color: white;
 		font-size: small;
@@ -424,11 +422,16 @@ footer {
 	}
 
 	/* Small Screen : Recherche icon */
+	#search {
+		padding: 0;
+	}
 	#rch_icon {
 		display: initial;
 	}
 	#rch_button {
 		display: none;
+	}
+	.srchContWidth {
 	}
 	/* Small Screen :Filtres */
 	.filtre {
@@ -436,11 +439,14 @@ footer {
 	}
 
 	/* Small Screen :Hebergements */
+	.pop_hotel_box {
+		min-width: 100%;
+	}
 
 	/* Small Screen : Activites */
 	.act_img_box {
-		max-width: 500px;
-		height: 260px;
+		max-width: 100%;
+		height: 220px;
 	}
 	/* Small Screen : Footer */
 	footer {
