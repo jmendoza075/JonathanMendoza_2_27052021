@@ -58,7 +58,7 @@ a:hover {
 #search {
 	padding: 0px 20px 20px 20px;
 }
-.srchContWidth {
+.rchContWidth {
 	padding-top: 20px;
 	width: 430px;
 	height: 50px;
@@ -448,8 +448,6 @@ footer {
 	}
 	#rch_button {
 		display: none;
-	}
-	.srchContWidth {
 	}
 
 	.filtre {
