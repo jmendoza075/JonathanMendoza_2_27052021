@@ -101,6 +101,11 @@ a:hover {
 	color: #f2f2f2;
 }
 
+#rch_button:active {
+	background-color: #f2f2f2;
+	color: #0065fc;
+}
+
 #rch_icon {
 	height: 50px;
 	width: 50px;
@@ -114,6 +119,10 @@ a:hover {
 #rch_icon:hover {
 	background-color: #3a88fc;
 	color: #f2f2f2;
+}
+#rch_icon:active {
+	background-color: #f2f2f2;
+	color: #0065fc;
 }
 
 /* Section FILTRES 	*/
