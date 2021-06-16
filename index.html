@@ -5,6 +5,7 @@
         <title>Reservia</title>
         <meta name="description" content="Trouver des hébergements et des activités dans la ville de votre choix." />
         <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="responsive.css" type="text/css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com"> 
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d7c3e1ebfe.js" crossorigin="anonymous"></script>
@@ -17,7 +18,7 @@
                 <div id="logo"><img src="images/Reservia.svg" alt="Reservia logo"/></div>
                  <!--Nav Bar-->
                 <div id="hebergement_link" class="navHeight flexContentCenter"><a class="navLinkProp" href="#hebergements">Hébergements</a></div>
-                <div id="activites_link" class="navHeight flexContentCenter"><a class="navLinkProp" href="#section_activites">Activités</a></div>
+                <div id="activites_link" class="navHeight flexContentCenter"><a id="activites_blk" class="navLinkProp" href="#section_activites">Activités</a></div>
                 <div id="inscrire_link" class="navHeight flexContentCenter "><a class="navLinkProp" href="#">S'inscrire</a></div>
         </header>  
          
@@ -77,7 +78,7 @@
                 <div class="contHotels">   <!-- Container of Hotel cards -->  
                     
                     <!-- Hotel#1 card -->
-                    <div class="hotel_card_box" onclick="location.href='#';" style="cursor: pointer;">      
+                    <div class="hotel_card_box" onclick="location.href='#';">     
                         <img class="hotel_img" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
                         <div class="hotel_info">
                             <h3>Auberge la Cannebière</h3>
@@ -87,12 +88,12 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star" style="color: #f2f2f2;"></i>
+                                <i class="fas fa-star greystar"></i>
                             </div> 
                         </div>                   
                     </div>   
                     <!-- Hotel#2 card --> 
-                    <div class="hotel_card_box" onclick="location.href='#';" style="cursor: pointer;">               
+                    <div class="hotel_card_box" onclick="location.href='#';">               
                         <img class="hotel_img" src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
                         <div class="hotel_info">
                             <h3>Hôtel du port</h3>
@@ -107,7 +108,7 @@
                         </div>
                     </div>   
                     <!-- Hotel#3 card -->
-                    <div class="hotel_card_box" onclick="location.href='#';" style="cursor: pointer;">                      
+                    <div class="hotel_card_box" onclick="location.href='#';">                      
                         <img class="hotel_img" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes">
                         <div class="hotel_info">
                             <h3>Hôtel Les mouettes</h3>
@@ -117,12 +118,12 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star" style="color: #f2f2f2;"></i>
+                                <i class="fas fa-star greystar"></i>
                             </div>  
                         </div>
                     </div>   
                      <!-- Hotel#4 card -->                
-                    <div class="hotel_card_box" onclick="location.href='#';" style="cursor: pointer;">     
+                    <div class="hotel_card_box" onclick="location.href='#';">     
                         <img class="hotel_img" src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
                         <div class="hotel_info">
                             <h3>Hôtel de la mer</h3>
@@ -131,13 +132,13 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star" style="color: #f2f2f2;"></i>
-                                <i class="fas fa-star" style="color: #f2f2f2;"></i>
+                                <i class="fas fa-star greystar"></i>
+                                <i class="fas fa-star greystar"></i>
                             </div>  
                         </div>                 
                     </div>
                     <!-- Hotel#5 card -->
-                    <div class="hotel_card_box" onclick="location.href='#';" style="cursor: pointer;">      
+                    <div class="hotel_card_box" onclick="location.href='#';">      
                         <img class="hotel_img" src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier">
                         <div class="hotel_info">
                             <h3>Auberge Le Panier</h3>
@@ -147,12 +148,12 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star" style="color: #f2f2f2;"></i>
+                                <i class="fas fa-star greystar"></i>
                             </div>  
                         </div>
                     </div>  
                     <!-- Hotel#6 card -->
-                    <div class="hotel_card_box" onclick="location.href='#';" style="cursor: pointer;">      
+                    <div class="hotel_card_box" onclick="location.href='#';">      
                         <img class="hotel_img" src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
                         <div class="hotel_info">
                             <h3>Hôtel chez Amina</h3>
@@ -178,20 +179,22 @@
                 </div>
                 
                 <div class="contPopulaire">   <!-- Container Popular Hotel cards -->
-                    <div class="pop_hotel_box" onclick="location.href='#';" style="cursor: pointer;">     <!-- Popular Hotel card -->
+                    <div class="pop_hotel_box" onclick="location.href='#';">     <!-- Popular Hotel card -->
                         <img class="pop_hotel_img" src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
                         <div class="pop_hotel_info">
                             <h3>Hôtel Le soleil du matin</h3>
                             <p class="text_prix">Nuit à partir de <strong>128€</strong></p>    
                             <div>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>     
                             </div>  
                         </div>
                     </div>
                 
-                    <div class="pop_hotel_box" onclick="location.href='#';" style="cursor: pointer;">
+                    <div class="pop_hotel_box" onclick="location.href='#';">
                         <img class="pop_hotel_img" src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au cœur de l’eau Chambres d’hôtes">
                         <div class="pop_hotel_info">
                             <h3>Au cœur de l’eau Chambres d’hôtes</h3>
@@ -201,12 +204,12 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star" style="color: #f2f2f2;"></i>
+                                <i class="fas fa-star greystar"></i>
                             </div> 
                         </div>
                     </div>
 
-                    <div class="pop_hotel_box" onclick="location.href='#';" style="cursor: pointer;">
+                    <div class="pop_hotel_box" onclick="location.href='#';">
                         <img class="pop_hotel_img" src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc">
                         <div class="pop_hotel_info">
                             <h3>Hôtel Tout bleu et blanc</h3>
@@ -216,7 +219,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star" style="color: #f2f2f2;"></i>
+                                <i class="fas fa-star greystar"></i>
                             </div> 
                         </div>
                     </div>
@@ -229,32 +232,32 @@
             <div id="section_activites">
                 <h2 class="titreMarginLeft">Activités à Marseille</h2>
                 <div id="activites">
-                    <div id="act1" class="act_img_box" onclick="location.href='#';" style="cursor: pointer;">
+                    <div id="act1" class="act_img_box" onclick="location.href='#';">
                         <img class="activite_img_tall" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"  >
                         <h3 class="actv_text">Vieux Port</h3>
                     </div>
 
-                    <div class="act_img_box" onclick="location.href='#';" style="cursor: pointer;">
+                    <div class="act_img_box" onclick="location.href='#';">
                         <img class="activite_img" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" >
                         <h3 class="actv_text">Fort de Pomègues</h3>
                     </div>
 
-                    <div id="act3" class="act_img_box" onclick="location.href='#';" style="cursor: pointer;">
+                    <div id="act3" class="act_img_box" onclick="location.href='#';">
                         <img  class="activite_img_tall" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                         <h3 class="actv_text">Parc National des Calanques</h3>
                     </div>
     
-                    <div id="act4" class="act_img_box" onclick="location.href='#';" style="cursor: pointer;">
+                    <div id="act4" class="act_img_box" onclick="location.href='#';">
                         <img class="activite_img" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" >
                         <h3 class="actv_text">Notre-Dame-de-la-Garde</h3>
                     </div>
     
-                    <div id="act5" class="act_img_box" onclick="location.href='#';" style="cursor: pointer;">
+                    <div id="act5" class="act_img_box" onclick="location.href='#';">
                         <img class="activite_img" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" >
                         <h3 class="actv_text">Îles du Frioul</h3>         
                     </div>    
             
-                    <div id="act6" class="act_img_box" onclick="location.href='#';" style="cursor: pointer;">
+                    <div id="act6" class="act_img_box" onclick="location.href='#';">
                         <img  class="activite_img" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                         <h3 class="actv_text">Parc Longchamp</h3>  
                     </div>
