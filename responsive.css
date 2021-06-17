@@ -101,8 +101,6 @@
 		font-weight: bolder;
 	}
 	#hebergement_link {
-		border-top: 0;
-		border-bottom: 3px solid #0065fc;
 		order: 2;
 		flex-basis: 48%;
 		justify-content: center;
@@ -112,12 +110,16 @@
 		flex-basis: 48%;
 		justify-content: center;
 	}
+	.topLine_link:hover {
+		border-top: 0;
+		border-bottom: 3px solid #0065fc;
+	}
 	.navHeight {
-		height: 80px;
+		height: 50px;
 	}
 
 	#search {
-		padding: 20px;
+		padding: 5px 20px;
 	}
 	#rch_icon {
 		display: initial;
