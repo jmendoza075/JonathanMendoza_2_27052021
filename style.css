@@ -28,9 +28,13 @@ header {
 	padding: 20px 20px 5px 20px;
 }
 #logo {
-	flex-basis: 60%;
+	flex-basis: 50%;
 }
-
+nav {
+	flex-basis: 35%;
+	display: flex;
+	justify-content: space-around;
+}
 .navHeight {
 	height: 100px;
 }
@@ -49,6 +53,7 @@ header {
 #inscrire_link {
 	font-size: 1.1em;
 	font-weight: bolder;
+	flex-basis: 5%;
 }
 a:hover {
 	font-weight: bolder;

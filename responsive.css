@@ -73,7 +73,7 @@
 /* On screens that are 768px wide or less */
 @media screen and (max-width: 768px) {
 	#logo {
-		flex-basis: 30%;
+		flex-basis: 40%;
 		justify-content: left;
 	}
 }
@@ -100,8 +100,11 @@
 		justify-content: center;
 		font-weight: bolder;
 	}
-	#hebergement_link {
+	nav {
 		order: 2;
+		flex-basis: 100%;
+	}
+	#hebergement_link {
 		flex-basis: 48%;
 		justify-content: center;
 	}

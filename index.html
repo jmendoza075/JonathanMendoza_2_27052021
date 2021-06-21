@@ -15,18 +15,19 @@
 
         <!-- Header -->
         <header class="flexContentSpaceBetween">
-                <div id="logo"><img src="images/Reservia.svg" alt="Reservia logo"/></div>
-                 <!--Nav Bar-->
+            <div id="logo"><img src="images/Reservia.svg" alt="Reservia logo"/></div>
+             <!--Nav Bar-->
+             <nav>
                 <div id="hebergement_link" class=" topLine_link navHeight flexContentCenter"><a class="navLinkProp" href="#hebergements">Hébergements</a></div>
                 <div id="activites_link" class="topLine_link navHeight flexContentCenter"><a id="activites_blk" class="navLinkProp" href="#section_activites">Activités</a></div>
-                <div id="inscrire_link" class="topLine_link navHeight flexContentCenter "><a class="navLinkProp" href="#">S'inscrire</a></div>
+             </nav>
+            <div id="inscrire_link" class="topLine_link navHeight flexContentCenter "><a class="navLinkProp" href="#">S'inscrire</a></div>
         </header>  
-         
           
         <!-- Section Search -->
-        <div id="search">
+        <section id="search">
             <div>
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en plein nature</p>
             </div>
             <div class="rchContWidth">
@@ -35,11 +36,10 @@
                 <div><button id="rch_button">Rechercher </button></div>
                 <div><button id="rch_icon" type="submit"><i class="fas fa-search fa-lg"></i></button></div>
             </div>
-        </div>    
-
+        </section>    
 
         <!-- Section: Filter -->
-        <div id="filtre">
+        <section id="filtre">
             <div class=" filtre_container flexRow ">
                 <div class="filtreTitle"><H3>Filtres</H3></div>
                 <div class="flexContentCenter filtreItemCont">
@@ -59,7 +59,7 @@
                     <div class="filtreText">Animaux autorises</div>
                 </div>
             </div>
-        </div>   
+        </section>   
 
         <!-- Section: Info_text-->
         <div id="info">
@@ -67,13 +67,9 @@
             <p>Plus de 500 logements sont disponibles dans cette ville</p> 
         </div> 
         
-
-
-        
-    
         <!-- Main Section Left_Hébergments + Right_Populaires-->  
-        <div id="section_hebergements">      
-            <div id="hebergements"> <!-- SubSection left column -->  
+        <section id="section_hebergements">      
+            <section id="hebergements"> <!-- SubSection left column -->  
                 <h2 class="titreMarginLeft">Hébergements à Marseille</h2> 
                 <div class="contHotels">   <!-- Container of Hotel cards -->  
                     
@@ -169,10 +165,10 @@
                     </div>  
                 </div>
                 <h3 class="titreMarginLeft">Afficher plus</h3> 
-            </div>
+            </section>
         
             <!-- Section Les plus populaires -->
-            <div id="populaires">     <!-- Subsection right column -->
+            <section id="populaires">     <!-- Subsection right column -->
                 <div class="flexContentSpaceBetween">
                     <h2 class="titreMarginLeft">Les plus populaires</h2>
                     <i id="iconChart" class="fas fa-chart-line fa-lg"></i>
@@ -224,12 +220,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
     
         <!-- Section Activités -->
-
-            <div id="section_activites">
+            <section id="section_activites">
                 <h2 class="titreMarginLeft">Activités à Marseille</h2>
                 <div id="activites">
                     <div id="act1" class="act_img_box" onclick="location.href='#';">
@@ -262,7 +257,8 @@
                         <h3 class="actv_text">Parc Longchamp</h3>  
                     </div>
                 </div>
-            </div>
+            </section>
+
         <footer>
             <div class="footer_spacing">
                 <h3>A propos</h3>
